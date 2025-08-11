@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Frontend with Interactive Features</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MySite</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="container fade-in">
+      <h1>Welcome to My Responsive Site</h1>
+      <p>This site adapts beautifully to all screen sizes and includes interactive features using plain JavaScript.</p>
+    </section>
+
+    <section id="services" class="container fade-in">
+      <h2>Our Services</h2>
+      <p>We provide web development, design, and consulting services tailored for your needs.</p>
+    </section>
+
+    <section id="contact" class="container fade-in">
+      <h2>Contact Us</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <small class="error-message" id="name-error"></small>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <small class="error-message" id="email-error"></small>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <small class="error-message" id="message-error"></small>
+
+        <button type="submit">Send Message</button>
+        <p id="form-success" class="success-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
