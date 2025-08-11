@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multi-Step Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Multi-Step Form</h2>
+
+    <div id="progress-bar">
+      <div id="progress"></div>
+    </div>
+
+    <form id="multiStepForm" novalidate>
+
+      <!-- Step 1 -->
+      <fieldset class="step active">
+        <legend>Step 1: Personal Info</legend>
+        <label for="name">Name <span>*</span></label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email <span>*</span></label>
+        <input type="email" id="email" name="email" required />
+
+        <div class="buttons">
+          <button type="button" id="nextBtn1" class="next-btn">Next</button>
+        </div>
+      </fieldset>
+
+      <!-- Step 2 -->
+      <fieldset class="step">
+        <legend>Step 2: Address</legend>
+        <label for="address">Address <span>*</span></label>
+        <input type="text" id="address" name="address" required />
+
+        <label for="city">City <span>*</span></label>
+        <input type="text" id="city" name="city" required />
+
+        <div class="buttons">
+          <button type="button" class="prev-btn">Previous</button>
+          <button type="button" id="nextBtn2" class="next-btn">Next</button>
+        </div>
+      </fieldset>
+
+      <!-- Step 3 -->
+      <fieldset class="step">
+        <legend>Step 3: Review & Submit</legend>
+        <div id="summary"></div>
+
+        <div class="buttons">
+          <button type="button" class="prev-btn">Previous</button>
+          <button type="submit" id="submitBtn">Submit</button>
+        </div>
+      </fieldset>
+
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
