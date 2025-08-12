@@ -1,4 +1,4 @@
-# Introduction Video Script for Internee.pk Virtual Internship Program
+# Introduction for Internee.pk Virtual Internship Program
 
 ---
 
